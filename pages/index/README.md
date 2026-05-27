@@ -1,0 +1,28 @@
+
+---
+title: LeavesHack  
+keywords: LeavesHack  
+desc: LeavesHack教程文档  
+id: home_page  
+---
+
+
+
+
+<h3 align="center">
+  <img src="./favorite.png" width="100" alt="Logo" style="border-radius: 15px;"/><br/>
+  LeavesHack-Addon for <a href="https://meteorclient.com">Meteor Client</a>
+</h3>
+
+<p align="center">
+    <a href="https://github.com/MrBZBZ/LeavesHack/stargazers"><img src="https://img.shields.io/github/stars/MrBZBZ/LeavesHack?colorA=363a4f&colorB=b7bdf8&style=for-the-badge" alt=""></a>
+    <a href="https://github.com/MrBZBZ/LeavesHack/issues"><img src="https://img.shields.io/github/issues/MrBZBZ/LeavesHack?colorA=363a4f&colorB=f5a97f&style=for-the-badge" alt=""></a>
+    <a href="https://github.com/MrBZBZ/LeavesHack/contributors"><img src="https://img.shields.io/github/contributors/MrBZBZ/LeavesHack?colorA=363a4f&colorB=a6da95&style=for-the-badge" alt=""></a>
+  <a href="https://github.com/MrBZBZ/LeavesHack/releases"><img src="https://img.shields.io/github/downloads/MrBZBZ/LeavesHack/total?style=for-the-badge&labelColor=363a4f&color=f5c2e7" alt=""></a>
+</p>
+
+<p align="center">
+  <i>致力于改善无政府服务器的游玩体验</i><br/>
+  <i>适用Grim反作弊</i>
+</p>
+
