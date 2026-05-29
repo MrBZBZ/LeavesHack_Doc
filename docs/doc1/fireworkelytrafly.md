@@ -9,13 +9,13 @@
 
 ### 通用组 (General)
 
-| 参数名 | 类型 | 说明 | 默认值 |
-|--------|------|------|--------|
-| Mode | 枚举 | 运行模式<br>- Legit: 正常模式<br>- GrimDurability: Grim反作弊耐久模式 | GrimDurability |
-| FireWorkMode | 枚举 | 烟花使用模式<br>- Delay: 延迟使用<br>- Auto: 自动使用<br>- None: 不使用 | Auto |
-| PacketDelay | 浮点数 (0-100) | 发包延迟（tick） | 3 |
-| Unbreaking | 布尔 | 无限耐久模式（客户端显示） | true |
-| FakeDelay | 浮点数 (0-1000) | 无限耐久操作延迟 | 800 |
+| 参数名          | 类型           | 说明                                                     | 默认值            |
+|--------------|--------------|--------------------------------------------------------|----------------|
+| Mode         | 枚举           | 运行模式<br>- Legit: 正常模式<br>- GrimDurability: Grim甲飞      | GrimDurability |
+| FireWorkMode | 枚举           | 烟花使用模式<br>- Delay: 延迟使用<br>- Auto: 自动使用<br>- None: 不使用 | Auto           |
+| PacketDelay  | 浮点数 (0-100)  | 发包延迟（tick）                                             | 3              |
+| Unbreaking   | 布尔           | 无限耐久模式（客户端显示）                                          | true           |
+| FakeDelay    | 浮点数 (0-1000) | 无限耐久操作延迟                                               | 800            |
 
 ### 甲飞组 (ArmorFly)
 
@@ -43,13 +43,7 @@
 
 1. 确保背包中有鞘翅和烟花
 2. 开启模块后按空格起飞
-3. 模块会自动使用烟花加速
-4. 配合 `AutoArmorPlus` 的 `AutoElytra` 实现甲飞
+3. 模块会自动使用烟花加速，按W放烟花，Auto模式全自动续烟花，甲飞一定用Auto模式的烟花
+4. 配合 `AutoArmorPlus` 的 `AutoElytra` 实现背包自动切换鞘翅
 
 ---
-
-## 甲飞操作
-
-- 飞行时自动切换到鞘翅
-- 落地前自动切换回护甲
-- 开启 `Stand` 可在飞行时保持站立姿态

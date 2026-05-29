@@ -9,33 +9,33 @@
 
 ### 通用组 (General)
 
-| 参数名 | 类型 | 说明 | 默认值 |
-|--------|------|------|--------|
-| Chinese | 布尔 | 开启后所有模块和设置项显示中文 | false |
-| PacketPlace | 布尔 | 使用发包方式放置方块，提高速度 | false |
-| OptimizedCalc | 布尔 | 启用优化计算，提升性能 | true |
-| PlaceSwing | 枚举 | 放置方块时的挥手模式<br>- Both: 发包+客户端都挥手<br>- Packet: 仅发包挥手<br>- Client: 仅客户端挥手<br>- None: 不挥手 | Packet |
-| AttackSwing | 枚举 | 攻击时的挥手模式<br>- Both: 发包+客户端都挥手<br>- Packet: 仅发包挥手<br>- Client: 仅客户端挥手<br>- None: 不挥手 | Packet |
-| HandMode | 枚举 | 主手/副手模式<br>- MainHand: 主手<br>- OffHand: 副手 | MainHand |
-| NoBadPackets | 布尔 | 屏蔽错误数据包 | false |
-| PacketKickFix | 布尔 | 修复因数据包问题被踢出 | true |
-| ClientSwitch | 布尔 | 客户端切换功能 | true |
+| 参数名           | 类型 | 说明                                                                                    | 默认值      |
+|---------------|----|---------------------------------------------------------------------------------------|----------|
+| Chinese       | 布尔 | 开启后所有模块和设置项显示中文                                                                       | false    |
+| PacketPlace   | 布尔 | 使用发包方式放置方块，提高速度                                                                       | false    |
+| OptimizedCalc | 布尔 | 启用优化计算，提升性能                                                                           | true     |
+| PlaceSwing    | 枚举 | 放置方块时的挥手模式<br>- Both: 发包+客户端都挥手<br>- Packet: 仅发包挥手<br>- Client: 仅客户端挥手<br>- None: 不挥手 | Packet   |
+| AttackSwing   | 枚举 | 攻击时的挥手模式<br>- Both: 发包+客户端都挥手<br>- Packet: 仅发包挥手<br>- Client: 仅客户端挥手<br>- None: 不挥手   | Packet   |
+| HandMode      | 枚举 | 主手/副手模式<br>- MainHand: 主手<br>- OffHand: 副手                                            | MainHand |
+| NoBadPackets  | 布尔 | 屏蔽坏数据包(没iq就别动)                                                                        | false    |
+| PacketKickFix | 布尔 | 修复因长矛数据包问题被踢出                                                                         | true     |
+| ClientSwitch  | 布尔 | 客户端切换功能(没iq就别动)                                                                       | true     |
 
 ### 旋转组 (Rotation)
 
-| 参数名 | 类型 | 说明 | 默认值 |
-|--------|------|------|--------|
-| 1.21+ | 布尔 | 启用1.21+移动修复（推荐开启） | true |
+| 参数名          | 类型 | 说明                        | 默认值  |
+|--------------|----|---------------------------|------|
+| 1.21+        | 布尔 | 启用1.21+移动修复（推荐开启）         | true |
 | GrimRotation | 布尔 | Grim反作弊旋转修复（仅当1.21+关闭时可见） | true |
-| SnapBack | 布尔 | 转头后自动回正（仅当1.21+关闭时可见） | true |
+| SnapBack     | 布尔 | 转头后自动回正（仅当1.21+关闭时可见）     | true |
 
 ### 鞘翅组 (Elytra)
 
-| 参数名 | 类型 | 说明 | 默认值 |
-|--------|------|------|--------|
-| Baritone | 布尔 | Baritone兼容模式 | true |
-| ElytraMinDamage | 整数 (0-100) | 鞘翅最小耐久值，低于此值自动切换 | 10 |
-| MinFireworks | 整数 (0-64) | 最少烟花数量，低于此值停止使用 | 10 |
+| 参数名             | 类型         | 说明               | 默认值  |
+|-----------------|------------|------------------|------|
+| Baritone        | 布尔         | Baritone接管模式     | true |
+| ElytraMinDamage | 整数 (0-100) | 鞘翅最小耐久值，低于此值自动切换 | 10   |
+| MinFireworks    | 整数 (0-64)  | 最少烟花数量，低于此值停止使用  | 10   |
 
 ---
 
@@ -43,4 +43,4 @@
 
 1. **汉化**: 开启 `Chinese` 后需要重新打开模块列表才能生效
 2. **旋转修复**: 在3c3u等服务器建议开启 `1.21+` 移动修复
-3. **挥手模式**: 如果服务器检测挥手异常，可尝试改为 `Client` 或 `None`
+3. **挥手模式**: 如果服务器检测挥手异常，可尝试改为 `Client` 或 `Packet`
