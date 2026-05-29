@@ -42,11 +42,10 @@
             "from": "pypi",
             "config": {
                 "header_items": [
-                    "/static/css/custom.css"
-                ],
-                "footer_items": [
+                    "/static/css/custom.css",
                     "/static/js/custom.js"
                 ],
+                "footer_items": [],
                 "env":{
                     "main_color": "#4caf7d",
                     "second_color": "#0a7d43"
