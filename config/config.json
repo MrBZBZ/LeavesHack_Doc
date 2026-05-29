@@ -19,13 +19,8 @@
         "top":[
             {
                 "label": "",
-                "items": [
-                    {
-                        "label": "",
-                        "url": "#",
-                        "target": "_blank"
-                    }
-                ]
+                "url": "",
+                "target": "_blank"
             }
         ],
         "bottom": [

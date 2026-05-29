@@ -68,6 +68,14 @@ th {
 }
 
 /* ===== 7. 首页样式 ===== */
+html#home_page body {
+    background-image: url('/static/image/2b2t.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
 #home_page h3 {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
     -webkit-background-clip: text !important;
@@ -78,19 +86,19 @@ th {
 }
 
 #home_page p {
-    color: #555 !important;
+    color: #e0e0e0 !important;
 }
 
 #home_page a {
     color: #667eea !important;
     text-decoration: none !important;
-    border-bottom: 1px dashed rgba(102, 126, 234, 0.5) !important;
+    border-bottom: none !important;
     transition: all 0.3s ease !important;
 }
 
 #home_page a:hover {
     color: #764ba2 !important;
-    border-bottom: 1px solid #764ba2 !important;
+    border-bottom: none !important;
 }
 
 /* 深色模式首页 */
@@ -102,7 +110,7 @@ th {
 }
 
 .dark #home_page p {
-    color: #a0a0a0 !important;
+    color: #e0e0e0 !important;
 }
 
 .dark #home_page a {
@@ -187,7 +195,7 @@ th {
 #article a {
     color: #667eea !important;
     text-decoration: none !important;
-    border-bottom: 1px dashed rgba(102, 126, 234, 0.5) !important;
+    border-bottom: none !important;
     transition: all 0.3s ease !important;
 }
 
@@ -381,8 +389,13 @@ a:hover {
 }
 
 .dark #doc_footer {
-    background-color: #1b1b1b !important;
+    background-color: transparent !important;
     border-top-color: rgba(102, 126, 234, 0.3) !important;
+}
+
+.dark #page_footer {
+    background-color: transparent !important;
+    border-top-color: transparent !important;
 }
 
 /* 分割线 */
