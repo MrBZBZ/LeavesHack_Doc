@@ -304,19 +304,7 @@ html#home_page body {
 
 /* ===== 15. 返回顶部按钮 ===== */
 #to_top {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    border-radius: 50% !important;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4) !important;
-}
-
-#to_top:hover {
-    transform: translateY(-3px) !important;
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6) !important;
-}
-
-.dark #to_top {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4) !important;
+    display: none !important;
 }
 
 /* ===== 16. 滚动条 ===== */
@@ -385,7 +373,13 @@ a:hover {
 
 /* 页脚 */
 #doc_footer {
+    background-color: transparent !important;
     border-top: 1px solid rgba(102, 126, 234, 0.2) !important;
+}
+
+#page_footer {
+    background-color: transparent !important;
+    border-top-color: transparent !important;
 }
 
 .dark #doc_footer {
