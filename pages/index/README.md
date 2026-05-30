@@ -23,7 +23,7 @@ id: home_page
 
 <div class="hero-buttons">
   <a href="https://github.com/MrBZBZ/LeavesHack/releases" class="btn-primary">立即下载</a>
-  <a href="/doc1/" class="btn-secondary">查看安装教程</a>
+  <a href="/doc1/" class="btn-secondary">进入教程</a>
 </div>
 
 </div>

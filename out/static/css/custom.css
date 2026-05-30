@@ -357,21 +357,14 @@ th {
     border-left: none !important;
 }
 
-.is-active-link {
-    color: #1a1a1a !important;
-    font-weight: 400 !important;
-}
-
-.dark .is-active-link {
-    color: #e0e0e0 !important;
-}
-
 .is-active-link::before {
-    border-left: none !important;
+    color: #1a1a1a !important;
+
 }
 
 .dark .is-active-link::before {
-    border-left: none !important;
+    color: #e0e0e0 !important;
+
 }
 
 /* ===== 10. 返回顶部按钮 ===== */
