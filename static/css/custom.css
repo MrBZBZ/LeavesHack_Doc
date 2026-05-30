@@ -1,20 +1,29 @@
-/* ===== LeavesHack Minecraft工具官网主题 =====
+﻿/* ===== LeavesHack Minecraft工具官网主题 =====
    主色调: #333 (深灰), #1a1a1a (黑色)
    辅助色: #fff (白色), #e0e0e0 (浅灰)
    设计风格: 现代简约 + 黑白灰专业感
 */
 
+@font-face {
+    font-family: 'MyFont';
+    src: url('../font/trollhack.ttf') format('truetype');
+}
 /* ===== 1. 首页样式 - Hero Section ===== */
+body {
+    font-family: 'MyFont', sans-serif !important;
+}
 html#home_page body {
     background-image: url('/static/image/2b2t.png') !important;
+    font-family: 'MyFont', sans-serif !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
     position: relative !important;
+    overflow-x: hidden !important;
 }
 
-/* 深色半透明渐变遮罩 */
+/* 深色半透明遮罩 + 背景模糊 */
 html#home_page body::before {
     content: '' !important;
     position: fixed !important;
@@ -22,8 +31,36 @@ html#home_page body::before {
     left: 0 !important;
     right: 0 !important;
     bottom: 0 !important;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%) !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
     z-index: -1 !important;
+}
+
+/* 光晕背景效果 - 移到文字后面 */
+.glow-bg {
+    position: absolute !important;
+    top: 10% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 600px !important;
+    height: 400px !important;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.2) 40%, transparent 70%) !important;
+    filter: blur(80px) !important;
+    z-index: -2 !important;
+    pointer-events: none !important;
+}
+
+.glow-bg-2 {
+    position: absolute !important;
+    top: 30% !important;
+    left: 30% !important;
+    width: 400px !important;
+    height: 300px !important;
+    background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.4) 0%, rgba(59, 130, 246, 0.1) 50%, transparent 70%) !important;
+    filter: blur(60px) !important;
+    z-index: -2 !important;
+    pointer-events: none !important;
 }
 
 /* Hero Section 容器 */
@@ -35,6 +72,8 @@ html#home_page body::before {
     padding: 60px 20px !important;
     min-height: 60vh !important;
     text-align: center !important;
+    position: relative !important;
+    z-index: 1 !important;
 }
 
 /* Logo + 主标题 */
@@ -47,14 +86,14 @@ html#home_page body::before {
 
 .hero-logo {
     border-radius: 12px !important;
-    margin-bottom: 20px !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+    margin-bottom: 10px !important;
 }
 
 .hero-title h1 {
     color: #ffffff !important;
     font-size: 2.2em !important;
     font-weight: 700 !important;
+    font-family: 'MyFont', sans-serif !important;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5) !important;
     margin: 0 !important;
     letter-spacing: 1px !important;
@@ -137,6 +176,9 @@ html#home_page body::before {
 #navbar {
     background: rgba(20, 20, 20, 0.9) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 0 10px !important;
+    height: 60px !important;
+    line-height: 40px !important;
 }
 
 .dark #navbar {
@@ -151,11 +193,16 @@ html#home_page body::before {
     color: #fff !important;
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
-
+.site_title {
+    height: 60px !important;
+}
 /* 站点标题 */
 .site_title h2 {
     color: #e0e0e0 !important;
     font-weight: 700 !important;
+    font-size: 1.2em !important;
+    line-height: inherit !important;
+    padding: 10px 15px;
 }
 
 /* ===== 3. 侧边栏 ===== */
@@ -401,6 +448,9 @@ th {
 }
 
 /* ===== 12. 搜索框 ===== */
+#search {
+    height: 25px !important;
+}
 #search .search-input,
 .search-input {
     border: 2px solid rgba(0, 0, 0, 0.2) !important;
