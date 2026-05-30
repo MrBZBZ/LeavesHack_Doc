@@ -1,176 +1,198 @@
-
-/* ===== 科技感主题 - 强制覆盖版 =====
-   主色调: #667eea (蓝紫渐变)
-   辅助色: #764ba2 (紫色)
-   强调色: #00d4ff (霓虹蓝)
-   
-   使用 !important 强制覆盖原主题的绿色
+/* ===== LeavesHack Minecraft工具官网主题 =====
+   主色调: #333 (深灰), #1a1a1a (黑色)
+   辅助色: #fff (白色), #e0e0e0 (浅灰)
+   设计风格: 现代简约 + 黑白灰专业感
 */
 
-/* ===== 1. 全局覆盖 ===== */
-* {
-    scrollbar-color: #667eea #f0f0f0 !important;
-}
-
-/* ===== 2. 引用块 - 覆盖绿色边框 ===== */
-blockquote {
-    border-left: 4px solid #667eea !important;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.05) 100%) !important;
-}
-
-.dark blockquote {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.1) 100%) !important;
-}
-
-/* ===== 3. 上标链接 - 覆盖绿色边框 ===== */
-sup a {
-    border-left: 1px solid #667eea !important;
-    border-right: 1px solid #667eea !important;
-    background-color: rgba(102, 126, 234, 0.1) !important;
-}
-
-.dark sup a {
-    background-color: rgba(102, 126, 234, 0.2) !important;
-}
-
-/* ===== 4. 表格头部 - 覆盖绿色背景 ===== */
-th {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    color: white !important;
-    border: none !important;
-}
-
-.dark th {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-}
-
-/* ===== 5. 激活链接 - 覆盖绿色 ===== */
-#sidebar .active > a,
-#navbar .active > a,
-#sidebar a.active,
-#navbar a.active {
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%) !important;
-    color: white !important;
-}
-
-.dark #sidebar .active > a,
-.dark #navbar .active > a,
-.dark #sidebar a.active,
-.dark #navbar a.active {
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%) !important;
-    color: white !important;
-}
-
-/* ===== 6. 导航栏激活状态 - 覆盖绿色文字 ===== */
-.dark #sidebar .active > a,
-.dark #navbar .active > a {
-    color: white !important;
-}
-
-/* ===== 7. 首页样式 ===== */
+/* ===== 1. 首页样式 - Hero Section ===== */
 html#home_page body {
     background-image: url('/static/image/2b2t.png') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
+    position: relative !important;
 }
 
-#home_page h3 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
-    font-size: 1.8em !important;
+/* 深色半透明渐变遮罩 */
+html#home_page body::before {
+    content: '' !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%) !important;
+    z-index: -1 !important;
+}
+
+/* Hero Section 容器 */
+.hero-section {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 60px 20px !important;
+    min-height: 60vh !important;
+    text-align: center !important;
+}
+
+/* Logo + 主标题 */
+.hero-title {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-bottom: 30px !important;
+}
+
+.hero-logo {
+    border-radius: 12px !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+.hero-title h1 {
+    color: #ffffff !important;
+    font-size: 2.2em !important;
     font-weight: 700 !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5) !important;
+    margin: 0 !important;
+    letter-spacing: 1px !important;
 }
 
-#home_page p {
-    color: #e0e0e0 !important;
+/* 数据卡片 */
+.stats-card {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    margin-bottom: 25px !important;
 }
 
-#home_page a {
-    color: #667eea !important;
+.stat-item {
+    background: rgba(30, 30, 30, 0.85) !important;
+    color: #ffffff !important;
+    padding: 12px 20px !important;
+    border-radius: 10px !important;
+    font-size: 0.95em !important;
+    font-weight: 500 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3) !important;
+}
+
+/* 功能描述 */
+.hero-desc {
+    color: rgba(255,255,255,0.9) !important;
+    font-size: 1em !important;
+    margin-bottom: 35px !important;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5) !important;
+    max-width: 500px !important;
+}
+
+/* 行动按钮 */
+.hero-buttons {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 20px !important;
+}
+
+.btn-primary {
+    background: #1a1a1a !important;
+    color: #ffffff !important;
+    padding: 14px 32px !important;
+    border-radius: 8px !important;
+    font-size: 1.1em !important;
+    font-weight: 600 !important;
     text-decoration: none !important;
-    border-bottom: none !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
     transition: all 0.3s ease !important;
 }
 
-#home_page a:hover {
-    color: #764ba2 !important;
-    border-bottom: none !important;
+.btn-primary:hover {
+    background: #333 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* 深色模式首页 */
-.dark #home_page h3 {
-    background: linear-gradient(135deg, #00d4ff 0%, #667eea 50%, #764ba2 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
+.btn-secondary {
+    background: transparent !important;
+    color: #ffffff !important;
+    padding: 14px 32px !important;
+    border-radius: 8px !important;
+    font-size: 1.1em !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    border: 2px solid #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2) !important;
+    transition: all 0.3s ease !important;
 }
 
-.dark #home_page p {
-    color: #e0e0e0 !important;
+.btn-secondary:hover {
+    background: rgba(255,255,255,0.1) !important;
+    transform: translateY(-2px) !important;
 }
 
-.dark #home_page a {
-    color: #00d4ff !important;
-}
-
-/* ===== 8. 导航栏 ===== */
+/* ===== 2. 导航栏 ===== */
 #navbar {
-    background: linear-gradient(90deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%) !important;
-    border-bottom: 2px solid transparent !important;
-    border-image: linear-gradient(90deg, #667eea, #764ba2) 1 !important;
+    background: rgba(20, 20, 20, 0.9) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
 .dark #navbar {
-    background: linear-gradient(90deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%) !important;
+    background: rgba(20, 20, 20, 0.95) !important;
+}
+
+#navbar a {
+    color: #e0e0e0 !important;
 }
 
 #navbar a:hover {
-    color: #667eea !important;
-    text-shadow: 0 0 10px rgba(102, 126, 234, 0.5) !important;
-    background-color: rgba(102, 126, 234, 0.1) !important;
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* 站点标题 */
 .site_title h2 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
+    color: #e0e0e0 !important;
+    font-weight: 700 !important;
 }
 
-.dark .site_title h2 {
-    background: linear-gradient(135deg, #00d4ff 0%, #667eea 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
-}
-
-/* ===== 9. 侧边栏 ===== */
+/* ===== 3. 侧边栏 ===== */
 #sidebar {
-    border-right: 2px solid transparent !important;
-    background: linear-gradient(90deg, rgba(102, 126, 234, 0.05) 0%, transparent 100%) !important;
-    border-image: linear-gradient(180deg, #667eea, #764ba2) 1 !important;
+    border-right: none !important;
 }
 
 .dark #sidebar {
-    background: linear-gradient(90deg, rgba(102, 126, 234, 0.1) 0%, transparent 100%) !important;
+    border-right: none !important;
+    background: rgba(27, 27, 27, 0.95) !important;
 }
 
-#sidebar a {
-    border-radius: 8px !important;
-    transition: all 0.3s ease !important;
+#sidebar .active > a,
+#navbar .active > a,
+#sidebar a.active,
+#navbar a.active {
+    background: #1a1a1a !important;
+    color: white !important;
+}
+
+.dark #sidebar .active > a,
+.dark #navbar .active > a {
+    background: #333 !important;
+    color: white !important;
 }
 
 #sidebar a:hover {
-    background: linear-gradient(90deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.1) 100%) !important;
-    color: #667eea !important;
+    color: #1a1a1a !important;
+    background: rgba(0, 0, 0, 0.05) !important;
 }
 
-/* ===== 10. 文章内容 ===== */
+.dark #sidebar a:hover {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ===== 4. 文章内容 ===== */
 #article {
     line-height: 1.8 !important;
 }
@@ -188,42 +210,62 @@ html#home_page body {
     transform: translateY(-50%) !important;
     width: 4px !important;
     height: 70% !important;
-    background: linear-gradient(180deg, #667eea, #764ba2) !important;
+    background: #1a1a1a !important;
     border-radius: 2px !important;
 }
 
+.dark #article h1::before, .dark #article h2::before, .dark #article h3::before {
+    background: #e0e0e0 !important;
+}
+
 #article a {
-    color: #667eea !important;
+    color: #1a1a1a !important;
     text-decoration: none !important;
     border-bottom: none !important;
     transition: all 0.3s ease !important;
 }
 
-#article a:hover {
-    color: #764ba2 !important;
-    border-bottom: 1px solid #764ba2 !important;
-    text-shadow: 0 0 10px rgba(102, 126, 234, 0.3) !important;
+.dark #article a {
+    color: #e0e0e0 !important;
 }
 
-/* ===== 11. 代码块 ===== */
+#article a:hover {
+    color: #333 !important;
+}
+
+.dark #article a:hover {
+    color: #fff !important;
+}
+
+/* ===== 5. 文章标题 ===== */
+#article_title h1 {
+    color: #1a1a1a !important;
+}
+
+.dark #article_title h1 {
+    color: #ffffff !important;
+}
+
+/* ===== 6. 代码块 ===== */
 #article code {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%) !important;
-    border: 1px solid rgba(102, 126, 234, 0.2) !important;
+    background: rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
     border-radius: 4px !important;
     padding: 2px 6px !important;
+    color: #1a1a1a !important;
     font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace !important;
 }
 
 .dark #article code {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%) !important;
-    border-color: rgba(102, 126, 234, 0.4) !important;
-    color: #00d4ff !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    color: #e0e0e0 !important;
 }
 
 #article pre {
-    background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%) !important;
+    background: #1e1e2e !important;
     border-radius: 12px !important;
-    border: 1px solid rgba(102, 126, 234, 0.3) !important;
+    border: 1px solid rgba(0, 0, 0, 0.3) !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
     padding: 20px !important;
 }
@@ -235,36 +277,71 @@ html#home_page body {
     color: #a8dadc !important;
 }
 
-/* ===== 12. 文章标题 ===== */
-#article_title h1 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
+/* ===== 7. 引用块 ===== */
+blockquote {
+    border-left: 4px solid #1a1a1a !important;
+    background: rgba(0, 0, 0, 0.05) !important;
 }
 
-.dark #article_title h1 {
-    background: linear-gradient(135deg, #00d4ff 0%, #667eea 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
+.dark blockquote {
+    border-left: 4px solid #e0e0e0 !important;
+    background: rgba(255, 255, 255, 0.05) !important;
 }
 
-/* ===== 13. 目录导航 ===== */
-#toc {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%) !important;
-    border-left: 3px solid #667eea !important;
+/* ===== 8. 表格 ===== */
+th {
+    background: #1a1a1a !important;
+    color: white !important;
+    border: none !important;
+}
+
+.dark th {
+    background: #333 !important;
+}
+
+#article table {
+    border-collapse: collapse !important;
+    width: 100% !important;
     border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+#article td {
+    padding: 10px 12px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+#article tr:hover {
+    background: rgba(0, 0, 0, 0.03) !important;
+}
+
+.dark #article td {
+    background-color: #2d2d2d !important;
+    border: 1px solid #444 !important;
+}
+
+.dark #article tr:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* ===== 9. 目录导航 ===== */
+#toc {
+    background: rgba(0, 0, 0, 0.03) !important;
+    border-left: 3px solid #1a1a1a !important;
+    border-radius: 8px !important;
+}
+
+.dark #toc {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-left: 3px solid #e0e0e0 !important;
 }
 
 #toc a {
     color: #555 !important;
-    transition: all 0.3s ease !important;
 }
 
 #toc a:hover {
-    color: #667eea !important;
-    padding-left: 5px !important;
+    color: #1a1a1a !important;
 }
 
 .dark #toc a {
@@ -272,109 +349,89 @@ html#home_page body {
 }
 
 .dark #toc a:hover {
-    color: #00d4ff !important;
+    color: #fff !important;
 }
 
-/* ===== 14. 表格 ===== */
-#article table {
-    border-collapse: collapse !important;
-    width: 100% !important;
-    border-radius: 8px !important;
-    overflow: hidden !important;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1) !important;
+/* 去掉 toc 列表项的左边竖线 */
+#toc_content > .toc-list > .toc-list-item {
+    border-left: none !important;
 }
 
-#article td {
-    padding: 10px 12px !important;
-    border-bottom: 1px solid rgba(102, 126, 234, 0.1) !important;
+.is-active-link::before {
+    color: #1a1a1a !important;
+
 }
 
-#article tr:hover {
-    background: rgba(102, 126, 234, 0.05) !important;
+.dark .is-active-link::before {
+    color: #e0e0e0 !important;
+
 }
 
-.dark #article table {
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3) !important;
-}
-
-.dark #article td {
-    background-color: #2d2d2d !important;
-    border: 2px solid #444 !important;
-}
-
-/* ===== 15. 返回顶部按钮 ===== */
+/* ===== 10. 返回顶部按钮 ===== */
 #to_top {
     display: none !important;
 }
 
-/* ===== 16. 滚动条 ===== */
+/* ===== 11. 滚动条 ===== */
 ::-webkit-scrollbar {
     width: 10px !important;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(102, 126, 234, 0.1) !important;
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1) !important;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #667eea, #764ba2) !important;
+    background: #333 !important;
     border-radius: 5px !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #764ba2, #667eea) !important;
+    background: #1a1a1a !important;
 }
 
-/* ===== 17. 搜索框 ===== */
+.dark ::-webkit-scrollbar-thumb {
+    background: #555 !important;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #e0e0e0 !important;
+}
+
+/* ===== 12. 搜索框 ===== */
 #search .search-input,
 .search-input {
-    border: 2px solid rgba(102, 126, 234, 0.3) !important;
+    border: 2px solid rgba(0, 0, 0, 0.2) !important;
     border-radius: 25px !important;
     padding: 8px 20px !important;
-    transition: all 0.3s ease !important;
+}
+
+.dark #search .search-input,
+.dark .search-input {
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 #search .search-input:focus,
 .search-input:focus {
-    border-color: #667eea !important;
-    box-shadow: 0 0 20px rgba(102, 126, 234, 0.3) !important;
+    border-color: #1a1a1a !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) !important;
     outline: none !important;
 }
 
-/* ===== 18. 响应式 ===== */
-@media screen and (max-width: 900px) {
-    #home_page h3 {
-        background: linear-gradient(135deg, #00d4ff 0%, #667eea 100%) !important;
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent !important;
-        background-clip: text !important;
-        font-size: 1.5em !important;
-    }
-    
-    #sidebar {
-        background: rgba(255, 255, 255, 0.95) !important;
-    }
-    
-    .dark #sidebar {
-        background: rgba(30, 30, 50, 0.95) !important;
-    }
+.dark #search .search-input:focus,
+.dark .search-input:focus {
+    border-color: #e0e0e0 !important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1) !important;
 }
 
-/* ===== 19. 其他可能的绿色元素 ===== */
-/* 链接悬停背景 */
-a:hover {
-    background-color: rgba(102, 126, 234, 0.1) !important;
-}
-
-/* 深色模式链接悬停 */
-.dark a:hover {
-    background-color: rgba(102, 126, 234, 0.2) !important;
-}
-
-/* 页脚 */
+/* ===== 13. 页脚 ===== */
 #doc_footer {
     background-color: transparent !important;
-    border-top: 1px solid rgba(102, 126, 234, 0.2) !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
 
 #page_footer {
@@ -384,7 +441,7 @@ a:hover {
 
 .dark #doc_footer {
     background-color: transparent !important;
-    border-top-color: rgba(102, 126, 234, 0.3) !important;
+    border-top-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .dark #page_footer {
@@ -392,200 +449,159 @@ a:hover {
     border-top-color: transparent !important;
 }
 
+/* ===== 14. 其他元素 ===== */
 /* 分割线 */
 hr {
     border: none !important;
     height: 2px !important;
-    background: linear-gradient(90deg, transparent, #667eea, #764ba2, transparent) !important;
+    background: linear-gradient(90deg, transparent, #1a1a1a, transparent) !important;
+}
+
+.dark hr {
+    background: linear-gradient(90deg, transparent, #e0e0e0, transparent) !important;
 }
 
 /* 列表标记 */
-#article ul li::marker {
-    color: #667eea !important;
-}
-
+#article ul li::marker,
 #article ol li::marker {
-    color: #667eea !important;
+    color: #1a1a1a !important;
 }
 
 .dark #article ul li::marker,
 .dark #article ol li::marker {
-    color: #00d4ff !important;
+    color: #e0e0e0 !important;
 }
 
 /* 强调文字 */
 #article strong, #article b {
-    color: #667eea !important;
+    color: #1a1a1a !important;
 }
 
 .dark #article strong, .dark #article b {
-    color: #00d4ff !important;
-}
-
-/* 行内代码 */
-code {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%) !important;
-    border: 1px solid rgba(102, 126, 234, 0.2) !important;
-    color: #667eea !important;
-}
-
-.dark code {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%) !important;
-    color: #00d4ff !important;
-}
-
-/* 按钮 */
-button, .btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    border: none !important;
-    border-radius: 25px !important;
-    color: white !important;
-    transition: all 0.3s ease !important;
-}
-
-button:hover, .btn:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5) !important;
-}
-
-/* 选中文字 */
-::selection {
-    background: rgba(102, 126, 234, 0.3) !important;
-    color: inherit !important;
-}
-
-.dark ::selection {
-    background: rgba(0, 212, 255, 0.3) !important;
-}
-
-/* ===== 20. 日期信息 - 覆盖绿色 ===== */
-#article_info>div>span,
-.article_date,
-.article_author {
-    color: #667eea !important;
-}
-
-.dark #article_info>div>span,
-.dark .article_date,
-.dark .article_author {
-    color: #00d4ff !important;
+    color: #ffffff !important;
 }
 
 /* 标签样式 */
 #article_tags .tag,
 .tag {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    background: #1a1a1a !important;
     color: white !important;
     border-radius: 15px !important;
     padding: 2px 10px !important;
 }
 
-/* ===== 21. 目录导航激活状态 - 覆盖绿色 ===== */
-.is-active-link {
-    color: #667eea !important;
-    font-weight: 700 !important;
+.dark #article_tags .tag,
+.dark .tag {
+    background: #333 !important;
 }
 
-.is-active-link::before {
-    border-left: 2px solid #667eea !important;
+/* 日期信息 */
+#article_info>div>span,
+.article_date,
+.article_author {
+    color: #1a1a1a !important;
 }
 
-.dark .is-active-link {
-    color: #00d4ff !important;
+.dark #article_info>div>span,
+.dark .article_date,
+.dark .article_author {
+    color: #e0e0e0 !important;
 }
 
-.dark .is-active-link::before {
-    border-left: 2px solid #00d4ff !important;
-}
-
-/* 目录链接悬停 */
-.toc-link:hover {
-    color: #667eea !important;
-}
-
-.dark .toc-link:hover {
-    color: #00d4ff !important;
-}
-
-/* ===== 22. 其他绿色元素覆盖 ===== */
-/* 导航栏标题 */
-#navbar h2 {
+/* 选中文字 */
+::selection {
+    background: rgba(0, 0, 0, 0.2) !important;
     color: inherit !important;
+}
+
+.dark ::selection {
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* 上标链接 */
+sup a {
+    border-left: 1px solid #1a1a1a !important;
+    border-right: 1px solid #1a1a1a !important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.dark sup a {
+    border-left: 1px solid #e0e0e0 !important;
+    border-right: 1px solid #e0e0e0 !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* 链接悬停 */
+a:hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.dark a:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* 侧边栏提示 */
 #sidebar .tip {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    box-shadow: 1px 1px 2px 0px rgba(102, 126, 234, 0.5) !important;
+    background: #1a1a1a !important;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark #sidebar .tip {
+    background: #333 !important;
+}
+
+/* 侧边栏标签 */
+#sidebar .tag {
+    border: 1px solid #1a1a1a !important;
+    color: #1a1a1a !important;
+}
+
+.dark #sidebar .tag {
+    border-color: #e0e0e0 !important;
+    color: #e0e0e0 !important;
 }
 
 /* 博客列表链接 */
 #blog_list > ul > li a,
 #blog_list > ul > li a:visited {
-    color: #667eea !important;
+    color: #1a1a1a !important;
 }
 
 .dark #blog_list > ul > li a,
 .dark #blog_list > ul > li a:visited {
-    color: #00d4ff !important;
+    color: #e0e0e0 !important;
 }
 
-/* 侧边栏标签 */
-#sidebar .tag {
-    border: 1px solid #667eea !important;
-    color: #667eea !important;
-}
-
-.dark #sidebar .tag {
-    border-color: #00d4ff !important;
-    color: #00d4ff !important;
-}
-
-/* 打印按钮 */
-#print_page {
-    filter: hue-rotate(240deg) saturate(2) !important;
-}
-
-/* 代码颜色 */
-#article code,
-#article_content code {
-    color: #667eea !important;
-}
-
-.dark #article code,
-.dark #article_content code {
-    color: #00d4ff !important;
-}
-
-/* 表格头部 */
-thead th {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    border: 2px solid #667eea !important;
-}
-
-/* 按钮样式 */
-.btn,
-#page_content .btn,
-#content_body .btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    box-shadow: 1px 1px 2px 0px rgba(102, 126, 234, 0.5) !important;
-}
-
-.btn:hover,
-#page_content .btn:hover,
-#content_body .btn:hover {
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%) !important;
-    box-shadow: 1px 1px 8px 0px rgba(102, 126, 234, 0.8) !important;
-}
-
-/* 侧边栏激活链接文字 */
-#sidebar .active > a,
-#navbar .active > a {
-    color: white !important;
-}
-
-/* 深色模式侧边栏激活 */
-.dark #sidebar .active > a,
-.dark #navbar .active > a {
-    color: white !important;
+/* ===== 15. 响应式 ===== */
+@media screen and (max-width: 900px) {
+    .hero-title h1 {
+        font-size: 1.6em !important;
+    }
+    
+    .stats-card {
+        gap: 10px !important;
+    }
+    
+    .stat-item {
+        padding: 10px 15px !important;
+        font-size: 0.85em !important;
+    }
+    
+    .hero-buttons {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 12px 28px !important;
+        font-size: 1em !important;
+    }
+    
+    #sidebar {
+        background: rgba(255, 255, 255, 0.95) !important;
+    }
+    
+    .dark #sidebar {
+        background: rgba(27, 27, 27, 0.95) !important;
+    }
 }

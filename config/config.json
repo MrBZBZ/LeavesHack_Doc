@@ -9,9 +9,10 @@
         "home_url": "/",
         "items": [
             {
-                "url": "/doc1/",
-                "label": "快速开始",
-                "position": "left"
+                "url": "https://github.com/MrBZBZ/LeavesHack",
+                "label": "Github",
+                "position": "left",
+                "target": "_blank"
             }
         ]
     },
