@@ -358,13 +358,11 @@ th {
 }
 
 .is-active-link::before {
-    color: #1a1a1a !important;
-
+    border-left: 2px solid #1a1a1a !important;
 }
 
 .dark .is-active-link::before {
-    color: #e0e0e0 !important;
-
+    border-left: 2px solid #e0e0e0 !important;
 }
 
 /* ===== 10. 返回顶部按钮 ===== */
