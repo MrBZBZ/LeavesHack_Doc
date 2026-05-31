@@ -19,18 +19,6 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/autocity.html</loc>
-            <lastmod>2026-05-29</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://my_name.github.io/doc1/autocrystal.html</loc>
-            <lastmod>2026-05-29</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
             <loc>https://my_name.github.io/doc1/autoanchor.html</loc>
             <lastmod>2026-05-27</lastmod>
             <changefreq>weekly</changefreq>
@@ -43,14 +31,14 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/autorefreshtrade.html</loc>
+            <loc>https://my_name.github.io/doc1/autocity.html</loc>
             <lastmod>2026-05-29</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/autotorch.html</loc>
-            <lastmod>2026-05-27</lastmod>
+            <loc>https://my_name.github.io/doc1/autocrystal.html</loc>
+            <lastmod>2026-05-29</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
@@ -79,6 +67,18 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>https://my_name.github.io/doc1/autorefreshtrade.html</loc>
+            <lastmod>2026-05-29</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://my_name.github.io/doc1/autotorch.html</loc>
+            <lastmod>2026-05-27</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https://my_name.github.io/doc1/globalsetting.html</loc>
             <lastmod>2026-05-29</lastmod>
             <changefreq>weekly</changefreq>
@@ -91,13 +91,13 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/packetmine.html</loc>
-            <lastmod>2026-05-29</lastmod>
+            <loc>https://my_name.github.io/doc1/placerender.html</loc>
+            <lastmod>2026-05-27</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/pistoncrystal.html</loc>
+            <loc>https://my_name.github.io/doc1/printer.html</loc>
             <lastmod>2026-05-27</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -127,13 +127,13 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/placerender.html</loc>
-            <lastmod>2026-05-27</lastmod>
+            <loc>https://my_name.github.io/doc1/packetmine.html</loc>
+            <lastmod>2026-05-29</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/printer.html</loc>
+            <loc>https://my_name.github.io/doc1/pistoncrystal.html</loc>
             <lastmod>2026-05-27</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>

@@ -100,9 +100,29 @@ html#home_page body::before {
     margin-bottom: 30px !important;
 }
 
+/* ===== 进场动画 ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 .hero-logo {
     border-radius: 12px !important;
     margin-bottom: 10px !important;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.1s;
 }
 
 .hero-title h1 {
@@ -113,6 +133,9 @@ html#home_page body::before {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5) !important;
     margin: 0 !important;
     letter-spacing: 1px !important;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.3s;
 }
 
 /* 数据卡片 */
@@ -141,6 +164,9 @@ html#home_page body::before {
     margin-bottom: 35px !important;
     text-shadow: 0 1px 3px rgba(0,0,0,0.5) !important;
     max-width: 500px !important;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.5s;
 }
 
 /* 行动按钮 */
@@ -149,6 +175,9 @@ html#home_page body::before {
     flex-wrap: wrap !important;
     justify-content: center !important;
     gap: 20px !important;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.7s;
 }
 
 .btn-primary {

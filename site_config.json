@@ -43,7 +43,8 @@
             "config": {
                 "header_items": [
                     "/static/css/custom.css",
-                    "/static/js/custom.js"
+                    "/static/js/custom.js",
+                    "<link rel=\"icon\" type=\"image/x-icon\" href=\"/static/image/favicon.ico\">"
                 ],
                 "footer_items": [],
                 "env":{
