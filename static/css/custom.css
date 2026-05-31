@@ -1,4 +1,4 @@
-﻿/* ===== LeavesHack Minecraft工具官网主题 =====
+/* ===== LeavesHack Minecraft工具官网主题 =====
    主色调: #333 (深灰), #1a1a1a (黑色)
    辅助色: #fff (白色), #e0e0e0 (浅灰)
    设计风格: 现代简约 + 黑白灰专业感
@@ -8,12 +8,28 @@
     font-family: 'MyFont';
     src: url('../font/trollhack.ttf') format('truetype');
 }
+
 /* ===== 1. 首页样式 - Hero Section ===== */
+.video-bg {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    z-index: -2 !important;
+    opacity: 0.25 !important;
+    filter: blur(16px) !important;
+    pointer-events: none !important;
+}
+
 body {
     font-family: 'MyFont', sans-serif !important;
 }
+
 html#home_page body {
     background-image: url('/static/image/2b2t.png') !important;
+    background-color: #0a0a0a !important;
     font-family: 'MyFont', sans-serif !important;
     background-size: cover !important;
     background-position: center !important;
@@ -193,9 +209,11 @@ html#home_page body::before {
     color: #fff !important;
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
+
 .site_title {
     height: 60px !important;
 }
+
 /* 站点标题 */
 .site_title h2 {
     color: #e0e0e0 !important;
@@ -451,6 +469,7 @@ th {
 #search {
     height: 25px !important;
 }
+
 #search .search-input,
 .search-input {
     border: 2px solid rgba(0, 0, 0, 0.2) !important;

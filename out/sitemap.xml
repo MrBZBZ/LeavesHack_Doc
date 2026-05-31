@@ -7,18 +7,6 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/autorefreshtrade.html</loc>
-            <lastmod>2026-05-29</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://my_name.github.io/doc1/autotorch.html</loc>
-            <lastmod>2026-05-27</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
             <loc>https://my_name.github.io/doc1/antiantixray.html</loc>
             <lastmod>2026-05-27</lastmod>
             <changefreq>weekly</changefreq>
@@ -31,13 +19,61 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/modulelist.html</loc>
+            <loc>https://my_name.github.io/doc1/autocity.html</loc>
+            <lastmod>2026-05-29</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://my_name.github.io/doc1/autocrystal.html</loc>
+            <lastmod>2026-05-29</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://my_name.github.io/doc1/autoanchor.html</loc>
             <lastmod>2026-05-27</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/nukerplus.html</loc>
+            <loc>https://my_name.github.io/doc1/autoarmorplus.html</loc>
+            <lastmod>2026-05-29</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://my_name.github.io/doc1/autorefreshtrade.html</loc>
+            <lastmod>2026-05-29</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://my_name.github.io/doc1/autotorch.html</loc>
+            <lastmod>2026-05-27</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://my_name.github.io/doc1/autologin.html</loc>
+            <lastmod>2026-05-27</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://my_name.github.io/doc1/autoplaceblock.html</loc>
+            <lastmod>2026-05-27</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://my_name.github.io/doc1/autotree.html</loc>
+            <lastmod>2026-05-29</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://my_name.github.io/doc1/common-settings.html</loc>
             <lastmod>2026-05-27</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -67,38 +103,14 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/placerender.html</loc>
+            <loc>https://my_name.github.io/doc1/modulelist.html</loc>
             <lastmod>2026-05-27</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/printer.html</loc>
+            <loc>https://my_name.github.io/doc1/nukerplus.html</loc>
             <lastmod>2026-05-27</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://my_name.github.io/doc1/autoanchor.html</loc>
-            <lastmod>2026-05-27</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://my_name.github.io/doc1/autoarmorplus.html</loc>
-            <lastmod>2026-05-29</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://my_name.github.io/doc1/autocity.html</loc>
-            <lastmod>2026-05-29</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://my_name.github.io/doc1/autocrystal.html</loc>
-            <lastmod>2026-05-29</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
@@ -115,25 +127,13 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/autologin.html</loc>
+            <loc>https://my_name.github.io/doc1/placerender.html</loc>
             <lastmod>2026-05-27</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://my_name.github.io/doc1/autoplaceblock.html</loc>
-            <lastmod>2026-05-27</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://my_name.github.io/doc1/autotree.html</loc>
-            <lastmod>2026-05-29</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://my_name.github.io/doc1/common-settings.html</loc>
+            <loc>https://my_name.github.io/doc1/printer.html</loc>
             <lastmod>2026-05-27</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
