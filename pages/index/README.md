@@ -5,11 +5,9 @@ desc: LeavesHack教程文档
 id: home_page  
 ---
 
-[//]: # (<video class="video-bg" autoplay muted loop playsinline>)
-
-[//]: # (    <source src="/static/image/video.mp4" type="video/mp4">)
-
-[//]: # (</video>)
+<video class="video-bg" autoplay muted loop playsinline>
+    <source src="/static/image/video.mp4" type="video/mp4">
+</video>
 <div class="hero-section">
 <!-- 光晕背景 -->
 <div class="glow-bg"></div>

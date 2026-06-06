@@ -56,8 +56,6 @@ items:
   - label: 渲染功能
     items:
     - label: ModuleList - 模块列表
-      file: modulelist.md
+      file: modules/modulelist.md
     - label: PlaceRender - 放置渲染
       file: modules/placerender.md
-  - label: 通用说明
-    file: common-settings.md

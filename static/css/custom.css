@@ -4,6 +4,15 @@
    设计风格: 现代简约 + 黑白灰专业感
 */
 
+/* FOUC 防护：防止页面加载时闪烁白色背景 */
+html {
+    background-color: #1a1a1a !important;
+}
+
+html body {
+    background-color: #1a1a1a !important;
+}
+
 @font-face {
     font-family: 'MyFont';
     src: url('../font/trollhack.ttf') format('truetype');
@@ -17,9 +26,9 @@
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    z-index: -2 !important;
+    z-index: 0 !important;
     opacity: 0.25 !important;
-    filter: blur(16px) !important;
+    filter: blur(24px) !important;
     pointer-events: none !important;
 }
 
@@ -27,17 +36,17 @@ body {
     font-family: 'MyFont', sans-serif !important;
 }
 
-html#home_page body {
-    background-image: url('/static/image/2b2t.png') !important;
-    background-color: #0a0a0a !important;
-    font-family: 'MyFont', sans-serif !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
-    position: relative !important;
-    overflow-x: hidden !important;
-}
+/*html#home_page body {*/
+/*    background-image: url('/static/image/2b2t.png') !important;*/
+/*    background-color: #0a0a0a !important;*/
+/*    font-family: 'MyFont', sans-serif !important;*/
+/*    background-size: cover !important;*/
+/*    background-position: center !important;*/
+/*    background-repeat: no-repeat !important;*/
+/*    background-attachment: fixed !important;*/
+/*    position: relative !important;*/
+/*    overflow-x: hidden !important;*/
+/*}*/
 
 /* 深色半透明遮罩 + 背景模糊 */
 html#home_page body::before {
