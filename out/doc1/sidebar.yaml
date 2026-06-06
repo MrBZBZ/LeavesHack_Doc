@@ -1,57 +1,63 @@
 items:
 - label: 简介
   file: README.md
-- label: 全局设置
-  file: globalsetting.md
-- label: 战斗功能
+- label: 安装教程
+  file: install.md
+- label: 汉化教程
+  file: translation.md
+- label: 模块教程
   items:
-  - label: Aura - 杀戮光环
-    file: aura.md
-  - label: AutoAnchor - 自动重生锚
-    file: autoanchor.md
-  - label: AutoCity - 自动挖角
-    file: autocity.md
-  - label: AutoCrystal - 自动水晶
-    file: autocrystal.md
-  - label: PistonCrystal - 活塞水晶
-    file: pistoncrystal.md
-- label: 辅助功能
-  items:
-  - label: AntiAntiXray - 雷达矿透
-    file: antiantixray.md
-  - label: AutoArmorPlus - 自动穿甲
-    file: autoarmorplus.md
-  - label: AutoLogin - 自动登录
-    file: autologin.md
-  - label: AutoRefreshTrade - 自动刷交易
-    file: autorefreshtrade.md
-  - label: AutoTorch - 自动放火把
-    file: autotorch.md
-  - label: AutoTree - 自动树场
-    file: autotree.md
-  - label: NukerPlus - 范围挖掘
-    file: nukerplus.md
-  - label: PacketMine - 发包挖掘
-    file: packetmine.md
-- label: 移动功能
-  items:
-  - label: FireworkElytraFly - 烟花鞘翅飞行
-    file: fireworkelytrafly.md
-  - label: LegitNoFall - 合法防摔伤
-    file: legitnofall.md
-  - label: ScaffoldPlus - 自动搭路
-    file: scaffoldplus.md
-- label: 建筑功能
-  items:
-  - label: AutoPlaceBlock - 自动铺方块
-    file: autoplaceblock.md
-  - label: Printer - 投影打印机
-    file: printer.md
-- label: 渲染功能
-  items:
-  - label: ModuleList - 模块列表
-    file: modulelist.md
-  - label: PlaceRender - 放置渲染
-    file: placerender.md
-- label: 通用说明
-  file: common-settings.md
+  - label: 全局设置
+    file: modules/globalsetting.md
+  - label: 战斗功能
+    items:
+    - label: Aura - 杀戮光环
+      file: modules/aura.md
+    - label: AutoAnchor - 自动重生锚
+      file: modules/autoanchor.md
+    - label: AutoCity - 自动挖角
+      file: modules/autocity.md
+    - label: AutoCrystal - 自动水晶
+      file: modules/autocrystal.md
+    - label: PistonCrystal - 活塞水晶
+      file: modules/pistoncrystal.md
+  - label: 辅助功能
+    items:
+    - label: AntiAntiXray - 雷达矿透
+      file: modules/antiantixray.md
+    - label: AutoArmorPlus - 自动穿甲
+      file: modules/autoarmorplus.md
+    - label: AutoLogin - 自动登录
+      file: modules/autologin.md
+    - label: AutoRefreshTrade - 自动刷交易
+      file: modules/autorefreshtrade.md
+    - label: AutoTorch - 自动放火把
+      file: modules/autotorch.md
+    - label: AutoTree - 自动树场
+      file: modules/autotree.md
+    - label: NukerPlus - 范围挖掘
+      file: modules/nukerplus.md
+    - label: PacketMine - 发包挖掘
+      file: modules/packetmine.md
+  - label: 移动功能
+    items:
+    - label: FireworkElytraFly - 烟花鞘翅飞行
+      file: modules/fireworkelytrafly.md
+    - label: LegitNoFall - 合法防摔伤
+      file: modules/legitnofall.md
+    - label: ScaffoldPlus - 自动搭路
+      file: modules/scaffoldplus.md
+  - label: 建筑功能
+    items:
+    - label: AutoPlaceBlock - 自动铺方块
+      file: modules/autoplaceblock.md
+    - label: Printer - 投影打印机
+      file: modules/printer.md
+  - label: 渲染功能
+    items:
+    - label: ModuleList - 模块列表
+      file: modulelist.md
+    - label: PlaceRender - 放置渲染
+      file: modules/placerender.md
+  - label: 通用说明
+    file: common-settings.md

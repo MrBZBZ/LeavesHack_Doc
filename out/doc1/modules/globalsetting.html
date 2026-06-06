@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="en"  class="">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+        <script src="/static/js/custom.js"></script>
+        
+        <link rel="icon" type="image/x-icon" href="/static/image/favicon.ico">
+        
+    
+    
+    <title>GlobalSetting - 全局设置 - LeavesHack</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                
+                    <h2>LeavesHack</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a target="_blank" href="https://github.com/MrBZBZ/LeavesHack">Github</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/doc1/index.html"><span class="label">简介</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/install.html"><span class="label">安装教程</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/translation.html"><span class="label">汉化教程</span><span class=""></span></a></li>
+<li class="active_parent no_link"><a><span class="label">模块教程</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="active with_link"><a href="/doc1/modules/globalsetting.html"><span class="label">全局设置</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">战斗功能</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/doc1/modules/aura.html"><span class="label">Aura - 杀戮光环</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/autoanchor.html"><span class="label">AutoAnchor - 自动重生锚</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/autocity.html"><span class="label">AutoCity - 自动挖角</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/autocrystal.html"><span class="label">AutoCrystal - 自动水晶</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/pistoncrystal.html"><span class="label">PistonCrystal - 活塞水晶</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">辅助功能</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/doc1/modules/antiantixray.html"><span class="label">AntiAntiXray - 雷达矿透</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/autoarmorplus.html"><span class="label">AutoArmorPlus - 自动穿甲</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/autologin.html"><span class="label">AutoLogin - 自动登录</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/autorefreshtrade.html"><span class="label">AutoRefreshTrade - 自动刷交易</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/autotorch.html"><span class="label">AutoTorch - 自动放火把</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/autotree.html"><span class="label">AutoTree - 自动树场</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/nukerplus.html"><span class="label">NukerPlus - 范围挖掘</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/packetmine.html"><span class="label">PacketMine - 发包挖掘</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">移动功能</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/doc1/modules/fireworkelytrafly.html"><span class="label">FireworkElytraFly - 烟花鞘翅飞行</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/legitnofall.html"><span class="label">LegitNoFall - 合法防摔伤</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/scaffoldplus.html"><span class="label">ScaffoldPlus - 自动搭路</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">建筑功能</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/doc1/modules/autoplaceblock.html"><span class="label">AutoPlaceBlock - 自动铺方块</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/printer.html"><span class="label">Printer - 投影打印机</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">渲染功能</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/doc1/no_translate.html?ref=modulelist.html&from=/doc1/modulelist.html"><span class="label">ModuleList - 模块列表</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/doc1/modules/placerender.html"><span class="label">PlaceRender - 放置渲染</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/doc1/no_translate.html?ref=common-settings.html&from=/doc1/common-settings.html"><span class="label">通用说明</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>GlobalSetting - 全局设置</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="Last modify date: 2026-05-29">
+                                    2026-05-29
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <p><strong>模块类型</strong>: 全局配置模块<br />
+<strong>功能简介</strong>: 控制插件的全局行为，包括汉化、旋转修复、挥手模式等核心设置</p>
+<hr />
+<h2 id="%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E">参数说明</h2>
+<h3 id="%E9%80%9A%E7%94%A8%E7%BB%84-%28General%29">通用组 (General)</h3>
+<table>
+<thead>
+<tr>
+  <th>参数名</th>
+  <th>类型</th>
+  <th>说明</th>
+  <th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Chinese</td>
+  <td>布尔</td>
+  <td>开启后所有模块和设置项显示中文</td>
+  <td>false</td>
+</tr>
+<tr>
+  <td>PacketPlace</td>
+  <td>布尔</td>
+  <td>使用发包方式放置方块，提高速度</td>
+  <td>false</td>
+</tr>
+<tr>
+  <td>OptimizedCalc</td>
+  <td>布尔</td>
+  <td>启用优化计算，提升性能</td>
+  <td>true</td>
+</tr>
+<tr>
+  <td>PlaceSwing</td>
+  <td>枚举</td>
+  <td>放置方块时的挥手模式<br>- Both: 发包+客户端都挥手<br>- Packet: 仅发包挥手<br>- Client: 仅客户端挥手<br>- None: 不挥手</td>
+  <td>Packet</td>
+</tr>
+<tr>
+  <td>AttackSwing</td>
+  <td>枚举</td>
+  <td>攻击时的挥手模式<br>- Both: 发包+客户端都挥手<br>- Packet: 仅发包挥手<br>- Client: 仅客户端挥手<br>- None: 不挥手</td>
+  <td>Packet</td>
+</tr>
+<tr>
+  <td>HandMode</td>
+  <td>枚举</td>
+  <td>主手/副手模式<br>- MainHand: 主手<br>- OffHand: 副手</td>
+  <td>MainHand</td>
+</tr>
+<tr>
+  <td>NoBadPackets</td>
+  <td>布尔</td>
+  <td>屏蔽坏数据包(没iq就别动)</td>
+  <td>false</td>
+</tr>
+<tr>
+  <td>PacketKickFix</td>
+  <td>布尔</td>
+  <td>修复因长矛数据包问题被踢出</td>
+  <td>true</td>
+</tr>
+<tr>
+  <td>ClientSwitch</td>
+  <td>布尔</td>
+  <td>客户端切换功能(没iq就别动)</td>
+  <td>true</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E6%97%8B%E8%BD%AC%E7%BB%84-%28Rotation%29">旋转组 (Rotation)</h3>
+<table>
+<thead>
+<tr>
+  <th>参数名</th>
+  <th>类型</th>
+  <th>说明</th>
+  <th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1.21+</td>
+  <td>布尔</td>
+  <td>启用1.21+移动修复（推荐开启）</td>
+  <td>true</td>
+</tr>
+<tr>
+  <td>GrimRotation</td>
+  <td>布尔</td>
+  <td>Grim反作弊旋转修复（仅当1.21+关闭时可见）</td>
+  <td>true</td>
+</tr>
+<tr>
+  <td>SnapBack</td>
+  <td>布尔</td>
+  <td>转头后自动回正（仅当1.21+关闭时可见）</td>
+  <td>true</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E9%9E%98%E7%BF%85%E7%BB%84-%28Elytra%29">鞘翅组 (Elytra)</h3>
+<table>
+<thead>
+<tr>
+  <th>参数名</th>
+  <th>类型</th>
+  <th>说明</th>
+  <th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Baritone</td>
+  <td>布尔</td>
+  <td>Baritone接管模式</td>
+  <td>true</td>
+</tr>
+<tr>
+  <td>ElytraMinDamage</td>
+  <td>整数 (0-100)</td>
+  <td>鞘翅最小耐久值，低于此值自动切换</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>MinFireworks</td>
+  <td>整数 (0-64)</td>
+  <td>最少烟花数量，低于此值停止使用</td>
+  <td>10</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="%E4%BD%BF%E7%94%A8%E5%BB%BA%E8%AE%AE">使用建议</h2>
+<ol>
+<li><strong>汉化</strong>: 开启 <code>Chinese</code> 后需要重新打开模块列表才能生效</li>
+<li><strong>旋转修复</strong>: 在3c3u等服务器建议开启 <code>1.21+</code> 移动修复</li>
+<li><strong>挥手模式</strong>: 如果服务器检测挥手异常，可尝试改为 <code>Client</code> 或 <code>Packet</code></li>
+</ol>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/doc1/translation.html">
+                            <span class="icon"></span>
+                            <span class="label">汉化教程</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/doc1/modules/aura.html">
+                            <span class="label">Aura - 杀戮光环</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a target="_blank" href="/"></a></li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="_blank" href="https://github.com/teedoc/teedoc">Generated by teedoc</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+</body>
+
+</html>
