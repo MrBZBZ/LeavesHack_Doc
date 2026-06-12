@@ -2,7 +2,7 @@
     "site_name": "LeavesHack",
     "site_slogon": "",
     "site_root_url": "/",
-    "site_domain": "my_name.github.io",
+    "site_domain": "leaveshack.netlify.app",
     "site_protocol": "https",
     "config_template_dir": "config",
     "route": {
